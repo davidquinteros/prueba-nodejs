@@ -12,4 +12,9 @@ router.route('/:postId')
     .delete(deletePost)
     .put(updatePost);
 
+// router.route('/:id_usuario')
+//     .get(getPost)
+//     .delete(deletePost)
+//     .put(updatePost);
+
 export default router;

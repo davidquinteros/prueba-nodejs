@@ -8,7 +8,7 @@ import { Post } from '../interface/Post'
 export async function getPosts(req: Request, res: Response): Promise<Response | void> {
     try {
         const conn = await connect();
-        const posts = await conn.query('SELECT * FROM alumno');
+        const posts = await conn.query('SELECT * FROM USUARIO');
         return res.json(posts[0]);
     }
     catch (e) {
